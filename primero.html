@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+    <div id="app">
+        <div id="progress">
+        </div>
+        <div id="start-screen">
+            <button id="start-btn">Iniciar Examen</button>
+        </div>
+        <div id="rules-screen" class="hidden">
+            <h2>Reglas del Examen</h2>
+            <p>Cada pregunta tiene un límite de tiempo de 15 segundos.</p>
+            <p>Una vez respondida una pregunta, no puedes cambiar la respuesta.</p>
+            <button id="begin-btn">Comenzar</button>
+        </div>
+        <div id="quiz-screen" class="hidden">
+            <div id="question-container">
+                <div id="timer">15</div>
+                <h3 id="question">Pregunta</h3>
+                <div id="options">
+                    <!-- Opciones de respuesta se generarán dinámicamente -->
+                </div>
+            </div>
+             <p id="progress-text">Pregunta 1 de 10</p>
+            <button id="next-btn" class="hidden">Siguiente Pregunta</button>
+        </div>
+        <div id="result-screen" class="hidden">
+            <h2>Resultados del Examen</h2>
+            <p id="score"></p>
+            <button id="retry-btn">Repetir Examen</button>
+            <button id="exit-btn">Salir</button>
+        </div>
+    </div>
+
+    <script src="accion.js"></script>
+</body>
+</html>
